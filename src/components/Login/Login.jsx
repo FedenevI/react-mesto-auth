@@ -23,7 +23,7 @@ export default function Login({ handleLogin, statusText }) {
   }
 
   return (
-      <section className='registration'>
+      <main className='registration'>
         <h1 className='registration__title'>Войти</h1>
         <form className='registration__form' onSubmit={handleSubmit}>
           <input className='registration__input'
@@ -46,6 +46,6 @@ export default function Login({ handleLogin, statusText }) {
             />
           <button className='registration__button' type='submit'>{statusText ? 'Вход' : 'Войти...'}</button>
         </form>
-      </section>
+      </main>
   )
 }
