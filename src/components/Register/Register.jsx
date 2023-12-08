@@ -24,7 +24,7 @@ export default function Register({ handleRegister, statusText }) {
     }
   
     return (
-      <section className="registration">
+      <main className="registration">
         <h1 className='registration__title'>Регистрация</h1>
           <form className='registration__form' onSubmit={handleSubmit}>
             <input className='registration__input'
@@ -48,6 +48,6 @@ export default function Register({ handleRegister, statusText }) {
             <button className='registration__button' type='submit'>{statusText ? 'Зарегистрироваться' : 'Регистрация'}</button>
           </form>
           <p className="registration__subtitle">Уже зарегистрированы? <Link className="registration__subtitle_color_white" to="/sign-in">Войти</Link></p>
-      </section>
+      </main>
     )
   }

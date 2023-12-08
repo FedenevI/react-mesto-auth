@@ -93,6 +93,9 @@ function App() {
             navigate('/', {replace: true});
           }
         })   
+        .catch((err) => {
+          console.log(err);
+        })
     }
   }
 
